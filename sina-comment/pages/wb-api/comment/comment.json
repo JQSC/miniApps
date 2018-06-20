@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wb-card": "../../component/wb-card/wb-card-component",
+    "wb-comment": "../../component/wb-comment/wb-comment-component"
+  },
+  "navigationBarTitleText": "评论详情页"
+}

@@ -18,7 +18,6 @@ Component({
 
   },
   attached: function () {
-
     WxParse.wxParse('text', 'html', this.data.item.text, this, 5);
   },
   /**

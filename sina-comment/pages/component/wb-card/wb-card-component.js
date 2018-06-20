@@ -28,15 +28,15 @@ Component({
      * 4.target为Page对象,一般为this(必填)
      * 5.imagePadding为当图片自适应是左右的单一padding(默认为0,可选)
      */
+    console.log(this.data.item)
     WxParse.wxParse('text', 'html', this.data.item.text, this, 5);
   },
   methods: {
     // 这里是一个自定义方法
     customMethod: function(e) {
-      console.log(e.currentTarget.dataset.item)
       getApp().globalData.comments = e.currentTarget.dataset.item;
       wx.navigateTo({
-        url: '../common/common?mid=' + e.currentTarget.dataset.item.mid
+        url: '../wb-api/comment/comment?mid=' + e.currentTarget.dataset.item.mid
       })
     }
   }
