@@ -1,0 +1,25 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class='continer'>
+  <!-- 微博内容 -->
+  <view class='content'>
+    <view class='head'>
+      <span>{{item.name}}</span>
+      <span class='date'>{{item.date}}</span>
+    </view>
+    <view class='text-html'>
+      <template is="wxParse" data="{{wxParseData:text.nodes}}" />
+    </view>
+  </view>
+  <view class='bar-group'>
+    <div class="iconfont icon-share">
+      <span class="text">转发</span>
+    </div>
+    <div class="iconfont icon-comments" data-item="{{item}}" bindtap="customMethod">
+      <span class="text">{{item.comments}}</span>
+    </div>
+
+
+    <div class="iconfont icon-good"></div>
+  </view>
+</view>

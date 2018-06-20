@@ -1,0 +1,66 @@
+/* pages/component/common/common.wxss */
+@import "../../wxParse/wxParse.wxss";
+
+@font-face {
+  font-family: 'iconfont';  /* project id 712763 */
+  src: url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.eot');
+  src: url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-comments:before { content: "\e69b"}
+
+.icon-favorite:before { content: "\e6a0"; }
+
+.icon-bad:before { content: "\e716"; }
+
+.icon-good:before { content: "\e717"; }
+
+.icon-favoritesfilling:before { content: "\e730"; }
+
+.icon-good-filling:before { content: "\e866"; }
+
+.icon-share:before { content: "\e71d"; }
+
+
+.comment {
+  background-color: #fcfcfc;
+  border-top-width: 1px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: #e0e0e0;
+  border-style: solid;
+  padding: 20rpx;
+}
+
+.head {
+  font-size: 35rpx;
+  margin: 10px 0;
+  color: rebeccapurple;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.date {
+  margin-left: 10px;
+}
+
+
+.text {
+  font-size: 1rem;
+  color: #636363;
+  line-height: 1.375;
+  word-break: break-word;
+}

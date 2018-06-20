@@ -1,0 +1,7 @@
+<view class='continer'>
+  <!-- 以下是对一个自定义组件的引用 -->
+  <view wx:for='{{commentList}}' wx:key="{{item.id}}">
+    <bar-component item="{{item}}">
+    </bar-component>
+  </view>
+</view>

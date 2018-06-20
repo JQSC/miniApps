@@ -1,0 +1,9 @@
+<!--pages/common/common.wxml-->
+<view class='continer'>
+  <bar-component item="{{content}}">
+  </bar-component>
+  <view wx:for='{{comments}}' wx:key='{{item.id}}'>
+      <comment item="{{item}}"></comment>
+  </view>
+
+</view>

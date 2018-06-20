@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bar-component": "../component/bar/bar-component",
+    "comment": "../component/common/common"
+  },
+  "navigationBarTitleText": "评论详情页"
+}

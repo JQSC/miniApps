@@ -1,0 +1,17 @@
+<!--pages/component/common/common.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='comment'>
+  <view class='head'>
+    <view>
+      <span>{{item.name}}</span>
+      <span class='date'>{{item.date}}</span>
+    </view>
+    <view>
+      <span class="iconfont icon-good"></span>
+    </view>
+  </view>
+  <view class='text'>
+    <template is="wxParse" data="{{wxParseData:text.nodes}}" />
+  </view>
+
+</view>
