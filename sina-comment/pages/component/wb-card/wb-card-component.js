@@ -28,16 +28,21 @@ Component({
      * 4.target为Page对象,一般为this(必填)
      * 5.imagePadding为当图片自适应是左右的单一padding(默认为0,可选)
      */
-    console.log(this.data.item)
-    WxParse.wxParse('text', 'html', this.data.item.text, this, 5);
+    var item = this.data.item;
+    console.log(item)
+    WxParse.wxParse('text', 'html', item ? item.text : "", this, 2);
   },
   methods: {
     // 这里是一个自定义方法
     customMethod: function(e) {
-      getApp().globalData.comments = e.currentTarget.dataset.item;
+      var item = e.currentTarget.dataset.item;
+      getApp().globalData.comments = item;
       wx.navigateTo({
-        url: '../wb-api/comment/comment?mid=' + e.currentTarget.dataset.item.mid
+        url: '../wb-api/comment/comment?mid=' + item.mid
       })
+    },
+    pickPicsHtml:function(){
+
     }
   }
 })

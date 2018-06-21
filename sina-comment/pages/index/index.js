@@ -25,7 +25,8 @@ Page({
             text: o.mblog.text,
             comments: o.mblog.comments_count,
             id: i,
-            mid: o.mblog.mid
+            mid: o.mblog.mid,
+            pics: o.mblog.pics
           }
         })
         _this.setData({

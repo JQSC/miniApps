@@ -1,6 +1,6 @@
 <!--pages/common/common.wxml-->
 <view class='continer'>
-  <wb-card item="{{content}}">
+  <wb-card wx:if="{{content}}" item="{{content}}">
   </wb-card>
   <view wx:for='{{comments}}' wx:key='{{item.id}}'>
       <wb-comment item="{{item}}"></wb-comment>
