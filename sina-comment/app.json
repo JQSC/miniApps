@@ -1,12 +1,50 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/wb/wb",
     "pages/wb-api/comment/comment"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "豆蔻肥仔—微博评论",
-    "navigationBarTextStyle": "black"
-  }
+    "navigationBarBackgroundColor": "#59c8d9",
+    "navigationBarTitleText": "豆蔻肥仔",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "宝贝",
+        "iconPath":"lib/img/n.png",
+        "selectedIconPath":"lib/img/n1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "健康",
+        "iconPath": "lib/img/jk.png",
+        "selectedIconPath": "lib/img/jk-light.png"
+      },
+      {
+        "pagePath": "pages/wb/wb",
+        "text": "微博",
+        "iconPath": "lib/img/wb1.png",
+        "selectedIconPath": "lib/img/wb-light.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "私聊",
+        "iconPath": "lib/img/chat.png",
+        "selectedIconPath": "lib/img/chat-light.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "书签",
+        "iconPath": "lib/img/bq.png",
+        "selectedIconPath": "lib/img/bq-light.png"
+      }
+    ]
+  },
+  "debug":false
 }

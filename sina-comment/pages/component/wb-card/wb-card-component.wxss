@@ -1,38 +1,6 @@
 /* pages/common/bar/bar.wxss */
 @import "../../wxParse/wxParse.wxss";
-
-@font-face {
-  font-family: 'iconfont';  /* project id 712763 */
-  src: url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.eot');
-  src: url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.woff') format('woff'),
-  url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_712763_0wdoqzxaig9.svg#iconfont') format('svg');
-}
-
-.iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-comments:before { content: "\e69b"}
-
-.icon-favorite:before { content: "\e6a0"; }
-
-.icon-bad:before { content: "\e716"; }
-
-.icon-good:before { content: "\e717"; }
-
-.icon-favoritesfilling:before { content: "\e730"; }
-
-.icon-good-filling:before { content: "\e866"; }
-
-.icon-share:before { content: "\e71d"; }
-
-
+@import "../../../utils/icon.wxss";
 .continer{
     border-top-width: 1px;
     border-right-width: 0;
@@ -83,7 +51,10 @@
 
 .img-size{
   width: 33%;
+  /* height: 158px; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+  padding: 2px;
+  box-sizing: border-box;
 }

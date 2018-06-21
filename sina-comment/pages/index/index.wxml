@@ -1,7 +1,24 @@
-<view class='continer'>
-  <!-- 以下是对一个自定义组件的引用 -->
-  <view wx:for='{{commentList}}' wx:key="{{item.id}}">
-    <wb-card item="{{item}}">
-    </wb-card>
+<!--pages/index/index.wxml-->
+<view class='bg'>
+  <image style='height:100%;width:100%' src='../../lib/bg.jpg' mode='aspectFill'></image>
+  <!-- <view class='step'>
+    <text>{{day}}的步数: {{runData}}</text>
+  </view>
+  <view>
+     <input placeholder='现在的心情' ></input>
+     <button size="mini" type='primary'>提交</button>
+  </view> -->
+</view>
+<view class='panel blur'>
+</view>
+<view class='panel2'>
+  <text class='handline'>你若撒野,今生我把酒奉陪。</text>
+  <view class='content'>
+    <view class="iconfont icon-shijian">
+      <span class="text">2018-06-21</span>
+    </view>
+    <view class="iconfont icon-buxing1">
+      <span class="text">3232</span>
+    </view>
   </view>
 </view>

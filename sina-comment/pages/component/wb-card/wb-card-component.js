@@ -28,9 +28,9 @@ Component({
      * 4.target为Page对象,一般为this(必填)
      * 5.imagePadding为当图片自适应是左右的单一padding(默认为0,可选)
      */
-    var item = this.data.item;
-    console.log(item)
-    WxParse.wxParse('text', 'html', item ? item.text : "", this, 2);
+    var htmlEle = this.data.item;
+    var htmlText = htmlEle ? htmlEle.text : "" ;
+    WxParse.wxParse('text', 'html', htmlText, this, 2);
   },
   methods: {
     // 这里是一个自定义方法
@@ -40,9 +40,6 @@ Component({
       wx.navigateTo({
         url: '../wb-api/comment/comment?mid=' + item.mid
       })
-    },
-    pickPicsHtml:function(){
-
     }
   }
 })

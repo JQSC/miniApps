@@ -1,0 +1,23 @@
+/**index.wxss**/
+.continer{
+ position: absolute;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ background-color: rgb(242, 242, 242);
+}
+.text{
+  margin: 20rpx;
+  font-size: 1.0625rem;
+    color: #333;
+}
+.head{
+  font-size: 35rpx;
+  margin: 10px 0;
+  color:rebeccapurple;
+}
+.date{
+  margin-left: 10px;
+  
+}

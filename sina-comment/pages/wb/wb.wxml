@@ -1,0 +1,7 @@
+<scroll-view scroll-y enable-back-to-top="true" bindscrolltoupper="upper" class='continer'>
+  <!-- 以下是对一个自定义组件的引用 -->
+  <view wx:for='{{commentList}}' wx:key="{{item.id}}">
+    <wb-card item="{{item}}">
+    </wb-card>
+  </view>
+</scroll-view>

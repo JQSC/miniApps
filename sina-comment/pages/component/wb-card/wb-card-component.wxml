@@ -11,7 +11,9 @@
        <template is="wxParse" data="{{wxParseData:text.nodes}}" /> 
       <!-- <rich-text type = "text" nodes="{{item.text}}"></rich-text> -->
     </view>
-     <image class="img-size" mode='widthFix' src="https://wx2.sinaimg.cn/orj360/9677c392ly1fqqhjaxrw7j21901o0e82.jpg"></image>
+    <view class="img">
+        <image  class="img-size" wx:key="{{imgEle.pid}}" mode="widthFix" wx:for="{{item.pics}}" wx:for-item="imgEle" src="{{imgEle.url}}"></image>
+    </view>
   </view>
   <view class='bar-group'>
     <div class="iconfont icon-share">
@@ -20,7 +22,6 @@
     <div class="iconfont icon-comments" data-item="{{item}}" bindtap="customMethod">
       <span class="text">{{item.comments}}</span>
     </div>
-
     <div class="iconfont icon-good"></div>
   </view>
 </view>
