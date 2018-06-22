@@ -1,6 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class='bg'>
-  <image style='height:100%;width:100%' src='../../lib/bg.jpg' mode='aspectFill'></image>
+  <image style='height:100%;width:100%' src='../../lib/bg.jpg' mode='aspectFill'>
+  </image>
   <!-- <view class='step'>
     <text>{{day}}的步数: {{runData}}</text>
   </view>
@@ -15,7 +16,7 @@
   <text class='handline'>你若撒野,今生我把酒奉陪。</text>
   <view class='content'>
     <view class="iconfont icon-shijian">
-      <span class="text">2018-06-21</span>
+      <span class="text">2018-06-22</span>
     </view>
     <view class="iconfont icon-buxing1">
       <span class="text">3232</span>

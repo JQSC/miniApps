@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/wb/wb",
-    "pages/wb-api/comment/comment"
+    "pages/wb-api/comment/comment",
+    "pages/private/img-show/img-show"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,39 +13,34 @@
     "enablePullDownRefresh": true
   },
   "tabBar": {
-    "position":"bottom",
+    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "宝贝",
-        "iconPath":"lib/img/n.png",
-        "selectedIconPath":"lib/img/n1.png"
+        "iconPath": "lib/img/n.png",
+        "selectedIconPath": "lib/img/n1.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "健康",
+        "pagePath": "pages/private/img-show/img-show",
         "iconPath": "lib/img/jk.png",
         "selectedIconPath": "lib/img/jk-light.png"
       },
       {
         "pagePath": "pages/wb/wb",
-        "text": "微博",
         "iconPath": "lib/img/wb1.png",
         "selectedIconPath": "lib/img/wb-light.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "私聊",
+        "pagePath": "pages/private/img-show/img-show",
         "iconPath": "lib/img/chat.png",
         "selectedIconPath": "lib/img/chat-light.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "书签",
+        "pagePath": "pages/private/img-show/img-show",
         "iconPath": "lib/img/bq.png",
         "selectedIconPath": "lib/img/bq-light.png"
       }
     ]
   },
-  "debug":false
+  "debug": false
 }

@@ -12,7 +12,7 @@
       <!-- <rich-text type = "text" nodes="{{item.text}}"></rich-text> -->
     </view>
     <view class="img">
-        <image  class="img-size" wx:key="{{imgEle.pid}}" mode="widthFix" wx:for="{{item.pics}}" wx:for-item="imgEle" src="{{imgEle.url}}"></image>
+        <image  class="img-size" wx:key="{{imgEle.pid}}" mode="widthFix" wx:for="{{item.pics}}" wx:for-item="imgEle" src="{{imgEle.url}}" data-src="{{imgEle.large.url}}" bindtap="previewImage"></image>
     </view>
   </view>
   <view class='bar-group'>

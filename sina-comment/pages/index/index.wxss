@@ -21,7 +21,9 @@
   right: 0;
   height: 20%;
   background-color: black;
-  opacity: 0.5;  
+  opacity: 0.4;  
+  border-radius:15px;
+
 
 }
 .panel2{
@@ -31,7 +33,11 @@
   right: 0;
   height: 20%; 
   text-align: center;
-  color:whitesmoke;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color:rgb(223,218,220);
+
 }
 .handline{
   display:block;
